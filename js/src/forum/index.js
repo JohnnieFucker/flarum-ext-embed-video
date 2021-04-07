@@ -67,19 +67,6 @@ app.initializers.add('nearata-embed-video', app => {
                     url: videoUrl,
                     type: videoType,
                     customType: {
-                        dash: (video, player) => {
-                            window.dashjs.MediaPlayer().create().initialize(video, video.src, false);
-                        },
-                        shaka: (video, player) => {
-                            if (shaka.Player.isBrowserSupported()) {
-                                new shaka.Player(video)
-                                    .load(video.src)
-                                    .then(() => { })
-                                    .catch(e => console.error(e));
-                            } else {
-                                console.error('Error: Shaka is not supported.');
-                            }
-                        }
                     }
                 } : { quality: qualitySwitching, defaultQuality: 0 }
             });
@@ -90,12 +77,6 @@ app.initializers.add('nearata-embed-video', app => {
         return new Promise(resolve => {
             const script = document.createElement('script');
             script.src = extension.url;
-
-            if (extension.integrity) {
-                script.integrity = extension.integrity;
-                script.crossOrigin = 'anonymous';
-            }
-
             script.async = true;
             script.onload = resolve;
             document.body.appendChild(script);

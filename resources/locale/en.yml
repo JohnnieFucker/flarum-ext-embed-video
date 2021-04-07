@@ -11,11 +11,8 @@ nearata-embed-video:
       permissions:
         can_create_video_player: Can create video player
       video_types:
-        dash: Dash
         flv: Flv
         hls: Hls
-        shaka: Shaka
-        webtorrent: WebTorrent
   forum:
     button_tooltip_title: Embed Video
     modal:
@@ -25,10 +22,7 @@ nearata-embed-video:
       video_type_label: Video Type
       video_types:
         normal: Normal
-        dash: Dash
         flv: Flv
         hls: Hls
-        shaka: Shaka
-        webtorrent: WebTorrent
       video_url_label: Video URL
       video_url_placeholder: Ex. https://example.com/filename.mp4

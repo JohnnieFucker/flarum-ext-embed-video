@@ -56,19 +56,10 @@ return [
             return (bool) $serializer->getActor()->can('nearata.embedvideo.create');
         }),
     (new Extend\Settings)
-        ->serializeToForum('embedVideoDash', 'nearata-embed-video.admin.settings.video_type.dash', function ($retrievedValue) {
-            return (bool) $retrievedValue;
-        })
         ->serializeToForum('embedVideoFlv', 'nearata-embed-video.admin.settings.video_type.flv', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
         ->serializeToForum('embedVideoHls', 'nearata-embed-video.admin.settings.video_type.hls', function ($retrievedValue) {
-            return (bool) $retrievedValue;
-        })
-        ->serializeToForum('embedVideoShaka', 'nearata-embed-video.admin.settings.video_type.shaka', function ($retrievedValue) {
-            return (bool) $retrievedValue;
-        })
-        ->serializeToForum('embedVideoWebTorrent', 'nearata-embed-video.admin.settings.video_type.webtorrent', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
         ->serializeToForum('embedVideoTheme', 'nearata-embed-video.admin.settings.options.theme', function ($retrievedValue) {

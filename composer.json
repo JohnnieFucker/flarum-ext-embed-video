@@ -1,5 +1,5 @@
 {
-    "name": "nearata/flarum-ext-embed-video",
+    "name": "JohnnieFucker/flarum-ext-embed-video",
     "description": "Allow users to embed video using DPlayer and BBCode",
     "keywords": [
         "flarum",
@@ -15,17 +15,16 @@
     "type": "flarum-extension",
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/Nearata/flarum-ext-embed-video/issues",
-        "source": "https://github.com/Nearata/flarum-ext-embed-video",
-        "forum": "https://discuss.flarum.org/d/24527"
+        "issues": "https://github.com/JohnnieFucker/flarum-ext-embed-video/issues",
+        "source": "https://github.com/JohnnieFucker/flarum-ext-embed-video"
     },
     "require": {
         "flarum/core": ">=0.1.0-beta.16 <=0.1.0"
     },
     "authors": [
         {
-            "name": "William Di Cicco",
-            "email": "williamdicicco@protonmail.com",
+            "name": "JohnnieFucker",
+            "email": "crazysperm@gmail.com",
             "role": "Developer"
         }
     ],
