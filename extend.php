@@ -1,6 +1,6 @@
 <?php
 
-namespace Nearata\EmbedVideo;
+namespace JohnnieFucker\EmbedVideo;
 
 use Flarum\Extend;
 use Flarum\Api\Serializer\ForumSerializer;
@@ -48,36 +48,36 @@ return [
                     return;
                 }
 
-                $event->actor->assertCan('nearata.embedvideo.create');
+                $event->actor->assertCan('johnniefucker.embedvideo.create');
             }
         }),
     (new Extend\ApiSerializer(ForumSerializer::class))
         ->attribute('embedVideoCreate', function (ForumSerializer $serializer) {
-            return (bool) $serializer->getActor()->can('nearata.embedvideo.create');
+            return (bool) $serializer->getActor()->can('johnniefucker.embedvideo.create');
         }),
     (new Extend\Settings)
-        ->serializeToForum('embedVideoFlv', 'nearata-embed-video.admin.settings.video_type.flv', function ($retrievedValue) {
+        ->serializeToForum('embedVideoFlv', 'johnniefucker-embed-video.admin.settings.video_type.flv', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
-        ->serializeToForum('embedVideoHls', 'nearata-embed-video.admin.settings.video_type.hls', function ($retrievedValue) {
+        ->serializeToForum('embedVideoHls', 'johnniefucker-embed-video.admin.settings.video_type.hls', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
-        ->serializeToForum('embedVideoTheme', 'nearata-embed-video.admin.settings.options.theme', function ($retrievedValue) {
+        ->serializeToForum('embedVideoTheme', 'johnniefucker-embed-video.admin.settings.options.theme', function ($retrievedValue) {
             return (string) $retrievedValue;
         })
-        ->serializeToForum('embedVideoLogo', 'nearata-embed-video.admin.settings.options.logo', function ($retrievedValue) {
+        ->serializeToForum('embedVideoLogo', 'johnniefucker-embed-video.admin.settings.options.logo', function ($retrievedValue) {
             return (string) $retrievedValue;
         })
-        ->serializeToForum('embedVideoLang', 'nearata-embed-video.admin.settings.options.lang', function ($retrievedValue) {
+        ->serializeToForum('embedVideoLang', 'johnniefucker-embed-video.admin.settings.options.lang', function ($retrievedValue) {
             return (string) $retrievedValue;
         })
-        ->serializeToForum('embedVideoAirplay', 'nearata-embed-video.admin.settings.options.airplay', function ($retrievedValue) {
+        ->serializeToForum('embedVideoAirplay', 'johnniefucker-embed-video.admin.settings.options.airplay', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
-        ->serializeToForum('embedVideoHotkey', 'nearata-embed-video.admin.settings.options.hotkey', function ($retrievedValue) {
+        ->serializeToForum('embedVideoHotkey', 'johnniefucker-embed-video.admin.settings.options.hotkey', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
-        ->serializeToForum('embedVideoQualitySwitching', 'nearata-embed-video.admin.settings.options.quality_switching', function ($retrievedValue) {
+        ->serializeToForum('embedVideoQualitySwitching', 'johnniefucker-embed-video.admin.settings.options.quality_switching', function ($retrievedValue) {
             return (bool) $retrievedValue;
         })
 ];

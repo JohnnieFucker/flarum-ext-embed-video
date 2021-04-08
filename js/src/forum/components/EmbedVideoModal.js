@@ -13,13 +13,13 @@ export default class EmbedVideoModal extends Modal {
         this.videoType = 'normal';
         this.isLive = false;
         this.videoOptions = {
-            normal: app.translator.trans('nearata-embed-video.forum.modal.video_types.normal')
+            normal: app.translator.trans('johnniefucker-embed-video.forum.modal.video_types.normal')
         };
 
         extensions.forEach(ex => {
             if (app.forum.attribute(`embedVideo${ex.attributeName}`)) {
                 const exName = ex.attributeName.toLowerCase();
-                this.videoOptions[exName] = app.translator.trans(`nearata-embed-video.forum.modal.video_types.${exName}`);
+                this.videoOptions[exName] = app.translator.trans(`johnniefucker-embed-video.forum.modal.video_types.${exName}`);
             }
         });
     }
@@ -29,7 +29,7 @@ export default class EmbedVideoModal extends Modal {
     }
 
     title() {
-        return app.translator.trans('nearata-embed-video.forum.modal.title');
+        return app.translator.trans('johnniefucker-embed-video.forum.modal.title');
     }
 
     content() {
@@ -37,7 +37,7 @@ export default class EmbedVideoModal extends Modal {
             m('.Modal-body', [
                 m('.Form', [
                     m('.Form-group', [
-                        m('label', app.translator.trans('nearata-embed-video.forum.modal.video_url_label')),
+                        m('label', app.translator.trans('johnniefucker-embed-video.forum.modal.video_url_label')),
                         m('input', {
                             type: 'name',
                             name: 'url',
@@ -45,11 +45,11 @@ export default class EmbedVideoModal extends Modal {
                             disabled: this.disabled,
                             oninput: e => this.videoUrl = e.target.value,
                             autocomplete: 'off',
-                            placeholder: app.translator.trans('nearata-embed-video.forum.modal.video_url_placeholder')
+                            placeholder: app.translator.trans('johnniefucker-embed-video.forum.modal.video_url_placeholder')
                         })
                     ]),
                     m('.Form-group', [
-                        m('label', app.translator.trans('nearata-embed-video.forum.modal.video_type_label')),
+                        m('label', app.translator.trans('johnniefucker-embed-video.forum.modal.video_type_label')),
                         m(Select, {
                             options: this.videoOptions,
                             value: this.videoType,
@@ -60,12 +60,12 @@ export default class EmbedVideoModal extends Modal {
                         m(Switch, {
                             onchange: value => this.isLive = value,
                             state: this.isLive
-                        }, app.translator.trans('nearata-embed-video.forum.modal.live_mode'))
+                        }, app.translator.trans('johnniefucker-embed-video.forum.modal.live_mode'))
                     ]),
                     app.forum.attribute('embedVideoQualitySwitching') ? m('.Form-group', [
                         m('a', {
                             class: 'Button Button--primary',
-                            href: 'https://github.com/Nearata/flarum-ext-embed-video/blob/master/QUALITY_SWITCHING.md',
+                            href: 'https://github.com/johnniefucker/flarum-ext-embed-video/blob/master/QUALITY_SWITCHING.md',
                             target: '_blank'
                         }, 'Quality Switching tutorial')
                     ]) : null,
@@ -74,7 +74,7 @@ export default class EmbedVideoModal extends Modal {
                             className: 'Button Button--primary Button--block',
                             type: 'submit',
                             loading: this.loading
-                        }, app.translator.trans('nearata-embed-video.forum.modal.submit_button'))
+                        }, app.translator.trans('johnniefucker-embed-video.forum.modal.submit_button'))
                     ])
                 ])
             ]),

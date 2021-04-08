@@ -5,20 +5,20 @@
 ## Install
 
 ```sh
-composer require nearata/flarum-ext-embed-video
+composer require johnniefucker/flarum-ext-embed-video
 ```
 
 ## Update
 
 ```sh
-composer update nearata/flarum-ext-embed-video
+composer update johnniefucker/flarum-ext-embed-video
 php flarum cache:clear
 ```
 
 ## Remove
 
 ```sh
-composer remove nearata/flarum-ext-embed-video
+composer remove johnniefucker/flarum-ext-embed-video
 php flarum cache:clear
 ```
 

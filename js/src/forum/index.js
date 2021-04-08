@@ -6,7 +6,7 @@ import TextEditor from 'flarum/forum/components/TextEditor';
 import { playerData, extensions } from './extensions';
 import EmbedVideoModal from './components/EmbedVideoModal';
 
-app.initializers.add('nearata-embed-video', app => {
+app.initializers.add('johnniefucker-embed-video', app => {
     extend(TextEditor.prototype, 'controlItems', function (items) {
         if (!app.forum.attribute('embedVideoCreate')) {
             return;
@@ -15,13 +15,13 @@ app.initializers.add('nearata-embed-video', app => {
         const editor = this.attrs.composer.editor;
 
         items.add(
-            'nearataEmbedVideo',
+            'JohnniefuckerEmbedVideo',
             m(Button, {
-                icon: 'fas fa-cat',
+                icon: 'fas fa-video',
                 class: 'Button Button--icon',
                 onclick: () => app.modal.show(EmbedVideoModal, { editor: editor }),
                 oncreate: vnode => $(vnode.dom).tooltip()
-            }, app.translator.trans('nearata-embed-video.forum.button_tooltip_title'))
+            }, app.translator.trans('johnniefucker-embed-video.forum.button_tooltip_title'))
         );
     });
 
@@ -77,7 +77,6 @@ app.initializers.add('nearata-embed-video', app => {
         return new Promise(resolve => {
             const script = document.createElement('script');
             script.src = extension.url;
-            script.async = true;
             script.onload = resolve;
             document.body.appendChild(script);
         });

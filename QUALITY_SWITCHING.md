@@ -23,8 +23,6 @@ qualities='<name>;<url>;<type:optional>'
 - `auto`
 - `hls`
 - `flv`
-- `dash`
-- `webtorrent`
 - `normal`
 
 ## Usage
@@ -48,7 +46,3 @@ sd;https://example.com/video_sd.m3u8,
 hd;https://example.com/video_hd.m3u8;hls
 ']
 ```
-
-## Known issues
-
-The `dash` video type is not supported. (partially confirmed, only me)

@@ -7,8 +7,6 @@
         "video",
         "dplayer",
         "hls",
-        "shaka",
-        "webtorrent",
         "flv",
         "bbcode"
     ],
@@ -30,7 +28,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Nearata\\EmbedVideo\\": "src/"
+            "JohnnieFucker\\EmbedVideo\\": "src/"
         }
     },
     "extra": {
@@ -38,7 +36,7 @@
             "title": "Embed Video",
             "category": "feature",
             "icon": {
-                "name": "fas fa-cat",
+                "name": "fas fa-video",
                 "backgroundColor": "#ffb000",
                 "color": "#fff"
             }
