@@ -3,6 +3,11 @@ export const playerData = {
     loaded: false
 };
 
+export const playerCSS = {
+    url: 'https://cdn.bootcdn.net/ajax/libs/dplayer/1.9.1/DPlayer.min.css',
+    loaded: false
+};
+
 export const extensions = [
     {
         attributeName: 'Flv',
